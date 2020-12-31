@@ -1,5 +1,5 @@
 import { Router, Status } from "https://deno.land/x/oak/mod.ts"
-import { initMovies } from "../test-data/data.ts"
+import { initMovies } from "../../test-data/data.ts"
 
 export const movieRouter = (
   // deno-lint-ignore no-explicit-any
