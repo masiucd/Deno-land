@@ -1,4 +1,4 @@
-import { Ask } from "../packages/index.ts"
+import Ask from "https://deno.land/x/ask/mod.ts"
 
 const readFileX = async (file: string) => {
   const contract = Deno.readTextFile(file)
@@ -52,4 +52,6 @@ const init = async () => {
 
 if (Deno.args[0] === "run") {
   init()
+} else {
+  ;("pleas enter 'run' after your script")
 }

@@ -1,8 +1,8 @@
-This Freelance Contract (this “Contract” or this “Freelance Contract”), is entered into and made effective as of 2020-12-21 (the “Effective Date”), by and between James (“Customer”), and Linda (“Freelancer”).
+This Freelance Contract (this “Contract” or this “Freelance Contract”), is entered into and made effective as of 2020-02-32 (the “Effective Date”), by and between bob (“Customer”), and frank (“Freelancer”).
 
 WHEREAS:
 
-Customer has a need for ts and
+Customer has a need for lol and
 Freelancer has an interest in performing such services for Customer; and
 The parties wish to set forth the terms and conditions upon which such services will be provided to Customer;
 NOW THEREFORE, in consideration of the foregoing, and the mutual promises herein contained, the parties hereby agree as follows:
@@ -12,12 +12,12 @@ This Freelance Contract is governed by the terms and conditions provided here an
 
 IN WITNESS WHEREOF, by their respective signatures below, the parties have caused the Contract, inclusive of Attachment A, to be duly executed and effective as of the Effective Date.
 
-Linda
+frank
 
 Signature
 
 
-James
+bob
 
 Signature
 
