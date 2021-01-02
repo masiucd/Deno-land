@@ -38,7 +38,6 @@ export const createMovie = asyncHandler(async (ctx: RouterCtx, next: FnPromise) 
   }
 
   await addToMovies(moviesXs, newMovie)
-
   ctx.response.status = Status.OK
   ctx.response.body = [moviesXs, newMovie]
   ctx.response.type = "json"

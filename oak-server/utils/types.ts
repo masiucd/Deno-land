@@ -24,4 +24,10 @@ export interface Movie {
   rating: number
 }
 
+export interface User {
+  id: string
+  name: string
+  age: number
+  email: string
+}
 export type MovieBody = Pick<Movie, "rating" | "title">

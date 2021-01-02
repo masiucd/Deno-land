@@ -1,5 +1,5 @@
 import { isHttpError } from "https://deno.land/x/oak@v6.4.1/httpError.ts"
-import { FnPromise, MiddleWareCtx, RouteFn, RouterCtx } from "../utils/types.ts"
+import { FnPromise, MiddleWareCtx, RouterCtx } from "../utils/types.ts"
 
 export default async (ctx: MiddleWareCtx, next: FnPromise) => {
   try {
