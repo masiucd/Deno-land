@@ -1,22 +1,10 @@
-import { Router, Status } from "https://deno.land/x/oak/mod.ts"
-import { initMovies } from "../../test-data/data.ts"
+import { createMovie, getMovieById, getMovies, start } from "../controllers/movies.ts"
+import { testLogger } from "../middleware/logger.ts"
+import { RouterType } from "../utils/types.ts"
 
-export const movieRouter = (
-  // deno-lint-ignore no-explicit-any
-  router: Router<Record<string | number, string | undefined>, Record<string, any>>
-) => {
-  router.get("/movies", async ctx => {
-    ctx.response.body = {
-      data: await initMovies(),
-    }
-  })
-  router.get("/movies/:id", async ctx => {
-    const movie = (await initMovies()).movies.find(movie => movie.id === Number(ctx.params.id))
-    if (!movie) {
-      ctx.throw(Status.BadRequest, "Bad Request")
-    }
-    ctx.response.body = {
-      movie,
-    }
-  })
+export const movieRouter = (router: RouterType) => {
+  router.get("/", start)
+  router.get("/movies", testLogger, getMovies)
+  router.get("/movies/:id", getMovieById)
+  router.post("/movies", createMovie)
 }
